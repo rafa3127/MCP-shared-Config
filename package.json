@@ -1,0 +1,37 @@
+{
+  "name": "mcp-shared-config",
+  "version": "1.0.0",
+  "description": "Generador de configuraciones MCP compartidas para múltiples usuarios",
+  "main": "src/generate.js",
+  "scripts": {
+    "generate": "node src/generate.js",
+    "validate": "node src/generate.js --validate",
+    "preview": "node src/generate.js --dry-run",
+    "list": "node src/generate.js --list-mcps",
+    "instructions": "node src/generate.js --show-instructions",
+    "help": "node src/generate.js --help",
+    "dev": "node src/generate.js --dry-run --user dev-test"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "configuration",
+    "shared",
+    "desktop"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tu-usuario/mcp-shared-config.git"
+  }
+}
